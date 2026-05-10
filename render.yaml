@@ -1,0 +1,61 @@
+services:
+  # Quick Actions Backend Service
+  - type: web
+    name: bio-pulse-quick-actions
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python backend/quick_actions_server.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10000
+    healthCheck:
+      path: /api/get-dashboard-data
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 3
+
+  # Security RAG Server
+  - type: web
+    name: bio-pulse-security-rag
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python backend/security_rag_server.py"
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10001
+    healthCheck:
+      path: /health
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 3
+
+  # ROI Model Server
+  - type: web
+    name: bio-pulse-roi-model
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python backend/roi_model_server.py"
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: PORT
+        value: 10002
+    healthCheck:
+      path: /health
+      initialDelaySeconds: 30
+      periodSeconds: 10
+      timeoutSeconds: 5
+      failureThreshold: 3
