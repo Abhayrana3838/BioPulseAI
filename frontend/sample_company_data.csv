@@ -1,0 +1,11 @@
+company_name,industry,revenue,expenses,employees,market_cap,debt_ratio,profit_margin,growth_rate,year_founded,location,sector
+TechCorp International,Technology,50000000,30000000,500,200000000,0.3,0.4,0.25,2010,San Francisco,Technology
+DataAnalytics Inc,Technology,30000000,25000000,300,150000000,0.5,0.17,0.15,2015,New York,Technology
+CloudSystems Pro,Technology,80000000,40000000,800,400000000,0.2,0.5,0.35,2008,Seattle,Technology
+BioMedical Solutions,Healthcare,45000000,35000000,600,300000000,0.4,0.22,0.18,2012,Boston,Healthcare
+GreenEnergy Co,Energy,60000000,45000000,450,250000000,0.35,0.25,0.3,2010,Austin,Energy
+FinanceHub Ltd,Finance,75000000,50000000,700,500000000,0.25,0.33,0.2,2005,Chicago,Finance
+RetailMax Corp,Retail,40000000,32000000,1200,180000000,0.45,0.2,0.12,2008,Los Angeles,Retail
+LogisticsPrime,Logistics,35000000,28000000,400,160000000,0.3,0.2,0.22,2011,Atlanta,Logistics
+ManufacturingPro,Manufacturing,55000000,38000000,900,280000000,0.28,0.31,0.16,2005,Detroit,Manufacturing
+CyberSecure Inc,Technology,42000000,28000000,350,220000000,0.15,0.33,0.28,2014,Denver,Technology

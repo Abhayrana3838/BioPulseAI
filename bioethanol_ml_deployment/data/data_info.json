@@ -1,0 +1,25 @@
+{
+  "feature_columns": [
+    "temperature",
+    "ph",
+    "substrate_concentration",
+    "fermentation_time",
+    "yeast_concentration",
+    "oxygen_level",
+    "nitrogen_source_encoded",
+    "catalyst_type_encoded"
+  ],
+  "regression_target": "growth_rate",
+  "classification_target": "growth_category",
+  "categorical_columns": [
+    "nitrogen_source",
+    "catalyst_type"
+  ],
+  "data_shape": [
+    1000,
+    9
+  ],
+  "created_date": "2026-05-10 16:31:09",
+  "best_regression_model": "Linear Regression",
+  "best_classification_model": "Gradient Boosting"
+}

@@ -1,0 +1,34 @@
+{
+  "model_performance": {
+    "accuracy": 0.8722222222222222,
+    "precision": 0.7,
+    "recall": 0.6,
+    "f1_score": 0.6461538461538462,
+    "auc_roc": 0.8297536945812808,
+    "avg_precision": 0.6662366949831688
+  },
+  "model_characteristics": {
+    "model_type": "Pipeline",
+    "features": [
+      "vibration",
+      "acoustic",
+      "temperature",
+      "current",
+      "IMF_1",
+      "IMF_2",
+      "IMF_3",
+      "random_noise_1",
+      "random_noise_2"
+    ],
+    "training_samples": 1440,
+    "test_samples": 360
+  },
+  "data_characteristics": {
+    "failure_rate_test": 0.19444444444444445,
+    "noise_level": 0.5,
+    "mislabel_rate": 0.1,
+    "original_features": 7,
+    "total_features": 9
+  },
+  "timestamp": "2026-05-10T00:06:09.043981"
+}
